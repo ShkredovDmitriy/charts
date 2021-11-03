@@ -1,2 +1,2 @@
-# mask animation
-demo https://shkredovdmitriy.github.io/text-animation/
+# chart.js
+demo https://shkredovdmitriy.github.io/charts/
