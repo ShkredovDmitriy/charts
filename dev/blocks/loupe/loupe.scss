@@ -1,0 +1,50 @@
+.loupe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loupe-container-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.loupe-container-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask: url("/images/circle.svg") no-repeat;
+  mask-position: 0 0;
+  mask-size: 180px auto;
+
+  img.background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+img.loupe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 221px;
+  pointer-events: none;
+}
