@@ -1,10 +1,8 @@
 extends ../../templates/index
 
 block variables
-    - var title = 'ds-webpack-starter'
+    - var title = 'chart.js'
     - var pageClass = 'index-page'
 
 block content
-  section.index
-    a(href="./text.html") Text
-    a(href="./loupe.html") Loupe
+  include ../../blocks/content/content
