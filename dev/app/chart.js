@@ -65,13 +65,13 @@ function customChartJs(config) {
   const bgColor = config.backgroundColor;
   const data = config.data;
   const totalData = config.data.reduce((a, b) => a + b, 0);
-  let value = config.value;
+  let value = config.value || 0;
   if (value > totalData) value = totalData;
   if (value < 0) value = 0;
   const needleColor = config.needleColor;
-  const label1 = config.label1;
-  const label2 = config.label2;
-  const label3 = config.label3;
+  const label1 = config.label1 || 0;
+  const label2 = config.label2 || 0;
+  const label3 = config.label3 || 0;
 
   const spacing = 64;
   const fontSize = 25;
