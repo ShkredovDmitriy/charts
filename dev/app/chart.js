@@ -81,7 +81,6 @@ function customChartJs(config) {
     plugins: [
       {
         afterDraw: chart => {
-          // console.log(chart);
           const needleValue = chart.config.data.datasets[0].needleValue;
           const dataTotal = chart.config.data.datasets[0].data.reduce(
             (a, b) => a + b,
